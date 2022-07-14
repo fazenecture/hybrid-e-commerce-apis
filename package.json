@@ -1,0 +1,22 @@
+{
+  "name": "hybrid-e-commerce-apis",
+  "version": "1.0.0",
+  "description": "Assignment for hybrid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fazenecture/hybrid-e-commerce-apis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fazenecture/hybrid-e-commerce-apis/issues"
+  },
+  "homepage": "https://github.com/fazenecture/hybrid-e-commerce-apis#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
