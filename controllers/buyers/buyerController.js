@@ -16,7 +16,7 @@ exports.sellersList = async (req, res) => {
   );
 };
 
-// Get the catalog of a seller by seller_id
+// Get the catalog of a seller by sellerId
 exports.getCatalog = async (req, res) => {
     const sellerId = req.params.sellerId;
     let allCatalog = [];
