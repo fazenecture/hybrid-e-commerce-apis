@@ -69,7 +69,6 @@ To run this project, you will need to add the following environment variables to
 
 ```http
   POST /api/auth/register
-
 ```
 ##### Sample Payload:
 ```
@@ -86,7 +85,6 @@ To run this project, you will need to add the following environment variables to
 
 ```http
   POST /api/auth/login
-
 ```
 | Parameter        | Type     | Description                |
 | :--------------  | :------- | :------------------------- |
@@ -106,7 +104,6 @@ To run this project, you will need to add the following environment variables to
 
 ```
   POST /api/seller/create-catalog
-
 ```
 | Parameter        | Type     | Description                |
 | :--------------  | :------- | :------------------------- |
@@ -156,7 +153,6 @@ To run this project, you will need to add the following environment variables to
 
 ```
   POST /api/buyer/add-to-cart
-
 ```
 | Parameter        | Type     | Description                |
 | :--------------  | :------- | :------------------------- |
@@ -176,7 +172,6 @@ To run this project, you will need to add the following environment variables to
 
 ```
   POST /api/buyer/create-order/:sellerId
-
 ```
 | Parameter        | Type     | Description                |
 | :--------------  | :------- | :------------------------- |
@@ -196,7 +191,6 @@ To run this project, you will need to add the following environment variables to
 
 ```
   GET /api/buyer/list-of-sellers
-
 ```
 | Parameter        | Type     | Description                |
 | :--------------  | :------- | :------------------------- |
@@ -208,7 +202,6 @@ To run this project, you will need to add the following environment variables to
 
 ```
   GET /api/seller/orders?sellerId=sellerId
-
 ```
 | Parameter        | Type     | Description                |
 | :--------------  | :------- | :------------------------- |
@@ -225,7 +218,6 @@ To run this project, you will need to add the following environment variables to
 
 ```
   GET /api/buyer/seller-catalog/:sellerId
-
 ```
 | Parameter        | Type     | Description                |
 | :--------------  | :------- | :------------------------- |
