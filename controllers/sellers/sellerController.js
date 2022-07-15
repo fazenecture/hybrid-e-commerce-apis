@@ -122,10 +122,7 @@ exports.getOrders = async (req, res) => {
                   res.send(err.sqlMessage);
                 } else {
                   allOrders[i]["items"] = result1;
-                  console.log("Result --> ",result1);
                   if (i === result.length - 1) {
-                      console.log("Hello", i, result.length);
-                    console.log("Al Orders --->>>>",allOrders);
                     res.status(200).send(allOrders);
                   }
                 }
