@@ -104,7 +104,7 @@ To run this project, you will need to add the following environment variables to
 
 #### Create Catalog
 
-```http
+```
   POST /api/seller/create-catalog
 
 ```
@@ -133,7 +133,7 @@ To run this project, you will need to add the following environment variables to
 
 #### Add Product
 
-```http
+```
   POST /api/seller/add-product
 
 ```
@@ -154,7 +154,7 @@ To run this project, you will need to add the following environment variables to
 
 #### Add To Cart
 
-```http
+```
   POST /api/buyer/add-to-cart
 
 ```
@@ -174,7 +174,7 @@ To run this project, you will need to add the following environment variables to
 
 #### Create Order
 
-```http
+```
   POST /api/buyer/create-order/:sellerId
 
 ```
@@ -194,7 +194,7 @@ To run this project, you will need to add the following environment variables to
 
 #### Get Sellers List
 
-```http
+```
   GET /api/buyer/list-of-sellers
 
 ```
@@ -206,7 +206,7 @@ To run this project, you will need to add the following environment variables to
 ### 
 #### Get Orders
 
-```http
+```
   GET /api/seller/orders?sellerId=sellerId
 
 ```
@@ -223,7 +223,7 @@ To run this project, you will need to add the following environment variables to
 
 #### Get Seller Catalog
 
-```http
+```
   GET /api/buyer/seller-catalog/:sellerId
 
 ```
