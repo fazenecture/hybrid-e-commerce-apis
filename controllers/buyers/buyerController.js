@@ -57,6 +57,7 @@ exports.getCatalog = async (req, res) => {
   );
 };
 
+
 exports.addToCart = async (req, res) => {
   const { productId, buyerId, sellerId } = req.body;
   const timestamp = new Date().valueOf();

@@ -224,4 +224,10 @@ To run this project, you will need to add the following environment variables to
 | `sellerId` | `string` | **Required**. Seller Id |
 
 
+## Postman Documentation
+
+[Link to Postman](https://documenter.getpostman.com/view/16301281/UzQvrPv5)
+
+
+
 
