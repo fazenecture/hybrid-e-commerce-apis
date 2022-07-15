@@ -67,7 +67,7 @@ To run this project, you will need to add the following environment variables to
 
 #### Register User
 
-```http
+```
   POST /api/auth/register
 ```
 ##### Sample Payload:
@@ -83,7 +83,7 @@ To run this project, you will need to add the following environment variables to
 
 #### Login User
 
-```http
+```
   POST /api/auth/login
 ```
 | Parameter        | Type     | Description                |
@@ -132,7 +132,6 @@ To run this project, you will need to add the following environment variables to
 
 ```
   POST /api/seller/add-product
-
 ```
 | Parameter        | Type     | Description                |
 | :--------------  | :------- | :------------------------- |
