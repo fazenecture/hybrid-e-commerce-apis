@@ -10,6 +10,8 @@ const router = express.Router();
 
 router.post('/api/seller/create-catalog',auth, sellerController.createCatalog);
 
+router.get('/api/seller/orders', auth, sellerController.getOrders);
+
 module.exports = router;
 
 

@@ -1,4 +1,3 @@
-const { response } = require("express");
 const express = require("express");
 const db = require("../../config/database");
 require("dotenv").config();
@@ -73,3 +72,39 @@ exports.createCatalog = async (req, res) => {
 
 };
 
+// Method to get Orders
+exports.getOrders = async (req, res) => {
+    const sellerId = req.query.sellerId;
+    let allOrders = [];
+
+    db.query(
+        `SELECT * FROM hybridEcomm.orders WHERE sellerId = "${sellerId}"`, (err, result) => {
+            if(err){
+                console.log(err);
+                res.status(400).send(err.sqlMessage);
+            } else {
+                allOrders = result;
+                if(Array.isArray(result) && result.length) {
+                    result.forEach(function(resu, i){
+                        db.query(
+                            `SELECT * FROM hybridEcomm.orderDetails WHERE orderId = "${result[i]["orderId"]}";`, (err, result1) => {
+                                if(err){
+                                    console.log(err);
+                                    res.send(err.sqlMessage);
+                                } else {
+                                    allOrders[i]['items'] = result1
+                                    if(i === result.length - 1){
+                                        res.status(200).send(allOrders);
+                                    }
+                                }
+                            }
+                        )
+                    })
+                } else {
+                    res.send("No Orders!");
+                }
+            }
+        }
+    )
+
+}
