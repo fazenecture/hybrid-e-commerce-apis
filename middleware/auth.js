@@ -16,7 +16,7 @@ const verifyToken = (req,res,next) => {
         }catch(err){
             return res.status(400).send("Invalid Token Id!");
         } 
-        res.headers('Access-Control-Allow-Origin', "*");
+        res.header('Access-Control-Allow-Origin', "*");
         res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With", 'Content-Type','x-access-token');                      
         return next();
 

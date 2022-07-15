@@ -4,7 +4,9 @@ require("dotenv").config();
 const cors = require("cors");
 
 const sellerRoutes = require('./routes/sellers/sellerRoutes');
+const buyerRoutes = require('./routes/buyers/buyerRoutes');
 const authRoutes = require('./routes/auth/authRoutes');
+
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -17,8 +19,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 
 
-app.use(sellerRoutes);
 app.use(authRoutes);
+app.use(sellerRoutes);
+app.use(buyerRoutes);
 
 
 app.get('*', (req,res) => {
